@@ -10,15 +10,20 @@ import UIKit
 import SceneKit
 import ARKit
 
-class ViewController: UIViewController, ARSCNViewDelegate {
+class ViewController: UIViewController, ARSCNViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
+    
+    let imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Set the view's delegate
         sceneView.delegate = self
+        imagePicker.delegate = self
+        imagePicker.sourceType = .camera
+        imagePicker.allowsEditing = true
         
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
@@ -74,7 +79,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         textGeometry.firstMaterial?.diffuse.contents = UIColor.blue
         
         let textNode = SCNNode(geometry: textGeometry)
-        textNode.scale = SCNVector3(0.005, 0.005, 0.005)
+        textNode.scale = SCNVector3(0.0025, 0.0025, 0.0025)
         textNode.eulerAngles.x = .pi/2
         textNode.position = SCNVector3(node.position.x/2, node.position.y/2, 0.1)
         node.addChildNode(textNode)
@@ -91,4 +96,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     }
     
+    @IBAction func tapCamera(_ sender: UIBarButtonItem) {
+        present(imagePicker, animated: true, completion: nil)
+        print("Camera button pressed.")
+    }
 }
