@@ -61,7 +61,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             planeNode.eulerAngles.x = -.pi/2
             plane.firstMaterial?.diffuse.contents = UIColor(white: 1.0, alpha: 0)
             node.addChildNode(planeNode)
-            updateText(text: "Kroatien", forNode: planeNode)
+            updateText(text: imageAnchor.referenceImage.name!, forNode: planeNode)
             
         }
         
@@ -71,7 +71,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     func updateText(text: String, forNode node: SCNNode) {
         
         let textGeometry = SCNText(string: text, extrusionDepth: 1.0)
-        
         textGeometry.firstMaterial?.diffuse.contents = UIColor.blue
         
         let textNode = SCNNode(geometry: textGeometry)

@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Kroatien-buch.png"
+      "filename" : "BVG.jpg"
     }
   ],
   "info" : {
@@ -10,7 +10,6 @@
     "author" : "xcode"
   },
   "properties" : {
-    "width" : 9.9998375000000017,
-    "unit" : "centimeters"
+    "width" : 0.050000000000000003
   }
 }

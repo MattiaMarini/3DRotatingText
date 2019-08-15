@@ -5,7 +5,19 @@
   },
   "resources" : [
     {
-      "filename" : "Kroatien-buch.arreferenceimage"
+      "filename" : "BVG.arreferenceimage"
+    },
+    {
+      "filename" : "CodFisc.arreferenceimage"
+    },
+    {
+      "filename" : "Kroatien.arreferenceimage"
+    },
+    {
+      "filename" : "N26.arreferenceimage"
+    },
+    {
+      "filename" : "Patente.arreferenceimage"
     }
   ]
 }
