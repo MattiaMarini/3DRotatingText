@@ -11,8 +11,8 @@
 		498450D62303FBA800624468 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 498450D52303FBA800624468 /* art.scnassets */; };
 		498450D82303FBA800624468 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498450D72303FBA800624468 /* ViewController.swift */; };
 		498450DB2303FBA800624468 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 498450D92303FBA800624468 /* Main.storyboard */; };
-		498450DD2303FBA800624468 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 498450DC2303FBA800624468 /* Assets.xcassets */; };
 		498450E02303FBA800624468 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 498450DE2303FBA800624468 /* LaunchScreen.storyboard */; };
+		498450E8230406B600624468 /* asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 498450E7230406B600624468 /* asset.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,9 +21,9 @@
 		498450D52303FBA800624468 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		498450D72303FBA800624468 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		498450DA2303FBA800624468 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		498450DC2303FBA800624468 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		498450DF2303FBA800624468 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		498450E12303FBA800624468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		498450E7230406B600624468 /* asset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = asset.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +60,9 @@
 				498450D52303FBA800624468 /* art.scnassets */,
 				498450D72303FBA800624468 /* ViewController.swift */,
 				498450D92303FBA800624468 /* Main.storyboard */,
-				498450DC2303FBA800624468 /* Assets.xcassets */,
 				498450DE2303FBA800624468 /* LaunchScreen.storyboard */,
 				498450E12303FBA800624468 /* Info.plist */,
+				498450E7230406B600624468 /* asset.xcassets */,
 			);
 			path = Poke3D;
 			sourceTree = "<group>";
@@ -127,7 +127,7 @@
 			files = (
 				498450D62303FBA800624468 /* art.scnassets in Resources */,
 				498450E02303FBA800624468 /* LaunchScreen.storyboard in Resources */,
-				498450DD2303FBA800624468 /* Assets.xcassets in Resources */,
+				498450E8230406B600624468 /* asset.xcassets in Resources */,
 				498450DB2303FBA800624468 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 95QQ2QGK9S;
 				INFOPLIST_FILE = Poke3D/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 95QQ2QGK9S;
 				INFOPLIST_FILE = Poke3D/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
