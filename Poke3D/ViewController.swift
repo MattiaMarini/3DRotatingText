@@ -39,7 +39,6 @@ class ViewController: UIViewController, ARSCNViewDelegate, UIImagePickerControll
         if let imageToTrack = ARReferenceImage.referenceImages(inGroupNamed: "PokemonCards", bundle: Bundle.main) {
         configuration.trackingImages = imageToTrack
         configuration.maximumNumberOfTrackedImages = 1
-        print("Images successfully tracked")
         }
         
         // Run the view's session
@@ -55,7 +54,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, UIImagePickerControll
 
     // MARK: - ARSCNViewDelegate
     
-    // Override to create and configure nodes for anchors added to the view's session.
+    // Create and configure nodes for anchors added to the view's session.
     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
         let node = SCNNode()
         
@@ -73,8 +72,8 @@ class ViewController: UIViewController, ARSCNViewDelegate, UIImagePickerControll
         return node
     }
  
+    //Create and update SCNText based on the recognized image name
     func updateText(text: String, forNode node: SCNNode) {
-        
         let textGeometry = SCNText(string: text, extrusionDepth: 1.0)
         textGeometry.firstMaterial?.diffuse.contents = UIColor.blue
         
@@ -84,7 +83,6 @@ class ViewController: UIViewController, ARSCNViewDelegate, UIImagePickerControll
         textNode.position = SCNVector3(node.position.x/2, node.position.y/2, 0.1)
         node.addChildNode(textNode)
         rotateText(forText: textNode)
-        
     }
     
     func rotateText (forText textToRotate: SCNNode) {
@@ -96,8 +94,10 @@ class ViewController: UIViewController, ARSCNViewDelegate, UIImagePickerControll
     
     }
     
+    //Take picture to create new recognizable objects
     @IBAction func tapCamera(_ sender: UIBarButtonItem) {
         present(imagePicker, animated: true, completion: nil)
-        print("Camera button pressed.")
     }
+    
+    //Rename picture taken
 }

@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 498450CB2303FBA700624468 /* Build configuration list for PBXProject "Poke3D" */;
+			buildConfigurationList = 498450CB2303FBA700624468 /* Build configuration list for PBXProject "3DRotatingText" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -294,7 +294,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mattiamarini.Poke3D;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattiamarini.3DRotatingText;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,7 +313,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mattiamarini.Poke3D;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattiamarini.3DRotatingText;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -323,7 +323,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		498450CB2303FBA700624468 /* Build configuration list for PBXProject "Poke3D" */ = {
+		498450CB2303FBA700624468 /* Build configuration list for PBXProject "3DRotatingText" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				498450E22303FBA800624468 /* Debug */,
